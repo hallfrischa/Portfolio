@@ -20,7 +20,9 @@ This guide serves as a refresher on pruning anatomy, proper cutting techniques, 
 
 The most common and destructive mistake in pruning is the "flush cut" (cutting flat against the trunk). To avoid this, you must identify two crucial anatomical features before your saw ever touches the wood.
 
-[attachment_1](attachment)
+![[visiblecollar 1.gif]]
+
+![[No-Visible-Collar(1) 1.jpg]]
 
 * **The Branch Bark Ridge (The Top):** Look in the "V" (crotch) where the branch meets the trunk. You will see a raised, often darker, pushed-up line of bark. 
 * **The Branch Collar (The Bottom/Sides):** Look at the base of the branch. It will have a swollen, flared "shoulder" where it attaches to the trunk. You may also see wrinkled or folded bark here.
@@ -35,7 +37,7 @@ The most common and destructive mistake in pruning is the "flush cut" (cutting f
 
 Never try to cut a heavy branch with a single cut. The weight will cause the branch to snap and peel a long strip of bark down the main trunk, causing severe damage. Always use the 3-Cut Method:
 
-[attachment_0](attachment)
+![[Proper-Tree-Pruning.jpg]]
 
 1.  **The Undercut:** Go 6 to 12 inches away from the trunk. Cut exactly one-third of the way *up* from the bottom of the branch. (This stops the bark from peeling).
 2.  **The Relief Cut:** Go another 1 to 2 inches further out from the trunk. Cut all the way through the branch from the top down. The branch will fall safely, breaking cleanly at your undercut.
