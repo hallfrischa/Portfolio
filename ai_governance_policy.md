@@ -2,7 +2,8 @@
 **Document ID:** SEC-GRC-AI-2026-01  
 **Classification:** Internal Corporate Use Only  
 **Target Organization:** MedVanguard Solutions  
-**Author:** Aaron Hallfrisch | M.S. Candidate in Cybersecurity and Information Assurance[span_5](start_span)[span_5](end_span)  
+**Author:** Aaron Hallfrisch | M.S. Candidate in Cybersecurity and Information Assurance
+
 **Framework Baselines:** NIST AI RMF 1.0, OWASP Top 10 for LLM Applications v1.0, HIPAA Security Rule  
 
 ---
