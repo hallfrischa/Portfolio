@@ -22,8 +22,8 @@ My career is built on the philosophy that true security requires bridging the ga
 * **[Surveillance Retention Policy](Surveillance_Retention_Policy_Optimization.md)** - Capacity planning and risk-based policy development for physical security forensics.
 * **[Clinical Digital Transformation](Clinical_EMR_Integration.md)** - HIPAA-aligned data integration and EMR workflow optimization.
 * **[Forensic Recovery Operations](Data_Recovery_Operations.md)** - High-stakes storage diagnostics, raw data extraction, and business continuity.
-* **[Enterprise AI Governance Policy](ai_governance_policy.md)** - Ethical guidelines and acceptable use frameworks for AI deployment.
-* **[AI Security & Data Protection](ai_security_proxy.py)** - DLP strategies and prompt engineering controls to prevent intellectual property leakage.
+* **[Enterprise AI Governance Policy](AI Governance Policy.md)** - Ethical guidelines and acceptable use frameworks for AI deployment.
+* **[AI Security & Data Protection](AI Security Proxy.py)** - DLP strategies and prompt engineering controls to prevent intellectual property leakage.
 
 ### Systems Integration & Engineering
 *Projects demonstrating advanced hardware proficiency, RF engineering, and complex systems design.*
