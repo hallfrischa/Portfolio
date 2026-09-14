@@ -24,4 +24,3 @@ Evaluated commercial HIPAA-compliant cloud fax services against a custom, in-hou
 ## Key Takeaways
 *   **Legacy Systems:** Developed proficiency in bridging aging telecommunications hardware with modern digital workflows.
 *   **Constraint-Based Design:** Successfully navigated strict regulatory (HIPAA) and budgetary constraints to deliver a high-value infrastructure project.
-* 
