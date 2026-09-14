@@ -1,26 +1,20 @@
 **Date Created:** 2026-07-03
-**Tags:** #Portfolio #Infrastructure #CaseStudy
+**Tags:** #Portfolio #DigitalTransformation #Virtualization #Telecom #AccessControl
 
-# Legacy Fax Digitization & Cost Optimization
+# Legacy Telecom Digitization & Secure Fax Ingestion
 
 ## Executive Summary
-Engineered a secure, cost-effective digital fax solution for a private medical office to eliminate paper/toner waste and centralize record retrieval while maintaining strict HIPAA compliance.
+Architected and deployed an on-premises fax digitization pipeline to bridge legacy analog telecommunications with modern Electronic Medical Record (EMR) workflows. This solution eliminated physical consumable waste and avoided recurring cloud-based eFax subscription fees while strictly securing sensitive document ingestion.
 
-## Problem Statement
-The office relied on analog faxing, creating significant overhead in consumables and inefficient document management. The objective was to modernize the workflow using existing hardware while meeting the security requirements of a medical facility.
+## Technical Architecture & Virtualization
+*   **Hardware Virtualization:** Integrated a physical analog modem card into the host server, utilizing PCIe hardware passthrough to directly bridge the landline telecom connection into an isolated Windows 10 Virtual Machine (VM).
+*   **Digital Ingestion:** Leveraged native Windows utilities within the VM to automatically receive, digitize, and route incoming analog faxes into standard digital document formats.
+*   **Storage Infrastructure:** Configured the VM's destination document directory to write directly to a secured, backend network share hosted on an Unraid storage array.
 
-## "Build vs. Buy" Analysis
-Evaluated commercial HIPAA-compliant cloud fax services against a custom, in-house solution. An on-premise virtualization approach was selected to:
-*   Minimize recurring monthly operational costs.
-*   Maximize hardware utility by hosting both fax digitization and security camera surveillance on the same server.
-*   Maintain full control over sensitive data at rest and in transit.
+## Security Controls & Access Management
+*   **Role-Based Access Control (RBAC):** Enforced strict RBAC policies on the Unraid network share, ensuring that only authorized clinical and administrative personnel could access the digitized faxes, adhering to the Principle of Least Privilege.
+*   **Physical Security Mitigation:** By digitizing faxes at the hardware level, the project completely eliminated the physical security risk of sensitive documents (PHI/PII) sitting unattended on a traditional fax machine output tray.
 
-## Technical Architecture (Sanitized)
-*   **Host Environment:** Windows Server virtualized on a Dell PowerEdge R720.
-*   **Ingestion:** Integrated legacy modem/fax card hardware passthrough to a virtual instance.
-*   **Workflow:** Automated digitization of inbound faxes into PDF format.
-*   **Storage:** Secure SMB integration with a centralized Unraid NAS for high-availability document storage.
-
-## Key Takeaways
-*   **Legacy Systems:** Developed proficiency in bridging aging telecommunications hardware with modern digital workflows.
-*   **Constraint-Based Design:** Successfully navigated strict regulatory (HIPAA) and budgetary constraints to deliver a high-value infrastructure project.
+## Business Impact
+*   **Cost Optimization (OPEX):** Reduced operational expenses by eliminating the need for physical consumables (paper, toner, machine maintenance) and avoiding the monthly recurring costs associated with third-party SaaS fax services.
+*   **Workflow Efficiency:** Greatly accelerated administrative processing by delivering faxes natively in digital formats, allowing staff to immediately upload documents into the digital charting system/EMR without manual scanning.
