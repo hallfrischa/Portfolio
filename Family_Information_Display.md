@@ -11,6 +11,7 @@ Information regarding security status and family scheduling was fragmented acros
 
 ## Technical Design
 *   **Aggregation Layer:** Utilized Home Assistant to ingest real-time feeds from local surveillance infrastructure (Blue Iris) and cloud-based scheduling (Google Calendar).
+*   **Automated Messaging:** Configured a Mosquitto MQTT broker to route automated server alerts and environmental statuses to a dedicated Busy Bar hardware notification device.
 *   **Presentation Layer:** Developed a custom, lightweight web interface optimized for a dedicated hardware display unit (running on Linux/Renegade hardware).
 *   **Infrastructure:** Deployed via a containerized environment to ensure high availability and low resource utilization.
 
@@ -29,4 +30,3 @@ Information regarding security status and family scheduling was fragmented acros
 *   **Data Aggregation:** Demonstrated expertise in integrating cross-platform data sources into a unified UI.
 *   **Systems Engineering:** Experience with end-to-end deployment—from backend ingestion and API management to frontend visualization.
 *   **Security Posture:** Applied "Least Privilege" by isolating the dashboard and associated IoT devices on a dedicated network segment.
-* 
