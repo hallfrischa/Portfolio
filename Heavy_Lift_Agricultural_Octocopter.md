@@ -10,8 +10,9 @@ Designing and engineering an eight-rotor heavy-lift octocopter platform for prec
 The objective is to develop a high-capacity UAV platform capable of carrying significant payloads (agricultural equipment) while maintaining flight stability and reliable long-range data transmission in remote or obstacle-heavy environments.
 
 ## Technical Design & Engineering
-*   **Platform Architecture:** Custom eight-rotor (octocopter) design, engineered for redundancy and payload capacity.
+*   **Platform Architecture:** Custom eight-rotor (octocopter) design utilizing a Titan Dynamics airframe model, engineered for redundancy and payload capacity. 
 *   **Command & Control:** Integration of SIYI (MK32/MK15) ground station hardware for low-latency, long-range digital telemetry and video transmission.
+*   **Custom Fabrication:** Utilized advanced 3D printing techniques and materials (including ASA, TPU, and Light Weight PLA) to fabricate structural airframe components and specialized mounting hardware.
 *   **Systems Integration:** Coordination of flight controller logic, power distribution, and multi-rotor synchronization to ensure safe operational limits.
 *   **Navigation & Telemetry:** Establishing a redundant communication link between the aircraft and the ground control station (GCS).
 
@@ -24,4 +25,3 @@ The objective is to develop a high-capacity UAV platform capable of carrying sig
 *   **Systems Engineering:** Managing the complex interplay of high-voltage power distribution, propulsion physics, and electronic communication.
 *   **Long-Range Comms:** Expertise in long-range digital data/video transmission architectures, a skill transferable to other RF and remote-monitoring projects.
 *   **Safety-Critical Design:** Developed an appreciation for redundant systems and fail-safe design in high-mass, high-energy aviation hardware.
-* 
