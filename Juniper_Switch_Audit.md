@@ -22,4 +22,4 @@ The objective was to evaluate the integrity and functional status of legacy ("ha
 *   **Hardware Lifecycle:** Demonstrated the ability to evaluate, vet, and standardize enterprise networking equipment.
 *   **Security First:** Prioritized a secure "clean-slate" approach to hardware integration, mitigating risks associated with legacy or pre-owned networking devices.
 *   **Technical Proficiency:** Deepened experience with enterprise-grade networking command-line interfaces (CLI).
-* 
+  
