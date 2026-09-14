@@ -1,32 +1,26 @@
 **Date Created:** 2026-07-03
-**Tags:** #Portfolio #HomeAssistant #Dashboarding #SystemsIntegration
+**Tags:** #Portfolio #IoTSecurity #NetworkSegmentation #AccessControl #Kiosk
 
-# Project: Centralized Family Information Dashboard
+# Secure Kiosk Display & IoT Network Segmentation
 
 ## Executive Summary
-Engineered a centralized, real-time information dashboard providing unified visibility into facility security (surveillance) and operational scheduling (calendar management) for improved situational awareness.
+Engineered a centralized information dashboard utilizing customized open-source hardware to aggregate live video feeds and schedules. The project serves as a practical demonstration of advanced IoT network segmentation, API proxying, and the Principle of Least Privilege (PoLP).
 
-## Problem Statement
-Information regarding security status and family scheduling was fragmented across multiple disparate applications, leading to poor visibility and inefficient coordination for family members on-site. The goal was to aggregate these into a single "glanceable" interface.
+## Hardware & OS Architecture
+*   **Endpoint Hardware:** Libre Computer "Renegade" Single Board Computer (SBC).
+*   **Operating System:** Debian 12 utilizing the Wayland/Wayfire compositor.
+*   **Application Layer:** A custom bash orchestration script driving the Chromium web browser in a locked-down, full-screen Kiosk mode.
 
-## Technical Design
-*   **Aggregation Layer:** Utilized Home Assistant to ingest real-time feeds from local surveillance infrastructure (Blue Iris) and cloud-based scheduling (Google Calendar).
-*   **Automated Messaging:** Configured a Mosquitto MQTT broker to route automated server alerts and environmental statuses to a dedicated Busy Bar hardware notification device.
-*   **Presentation Layer:** Developed a custom, lightweight web interface optimized for a dedicated hardware display unit (running on Linux/Renegade hardware).
-*   **Infrastructure:** Deployed via a containerized environment to ensure high availability and low resource utilization.
+## Secure Video Proxy Architecture (2-Stage Relay)
+To protect internal surveillance infrastructure from potential endpoint compromise, video streams are routed through a strict two-stage relay rather than direct connections:
+*   **Stage 1 (Ingestion):** Home Assistant securely pulls RTSP sub-streams directly from the Blue Iris Video Management System (VMS).
+*   **Stage 2 (Delivery):** The Renegade endpoint communicates exclusively with Home Assistant. By proxying the video, Home Assistant completely obfuscates the Blue Iris IP addresses, API credentials, and internal camera VLAN architecture from Chromium's direct network queries.
 
-## Sub-System Integrations
-*   **Security Feeds:** Configured Blue Iris to provide localized RTSP streams, ensuring surveillance footage remains within the internal network perimeter.
-*   **Calendar Aggregation:** Integrated Google Calendar via API to provide real-time schedule awareness.
-*   **Automation Logic:** Implemented ambient control logic (e.g., display power management and brightness adjustments based on time-of-day).
-
-## Technical Architecture (Sanitized)
-*   **Controller:** Home Assistant (Docker-based).
-*   **Data Ingestion:** REST APIs (Calendar); RTSP stream ingestion (Security Cameras).
-*   **Frontend:** Custom-configured dashboard optimized for wall-mounted display hardware.
-*   **Hardening:** IoT devices and dashboard traffic isolated within a dedicated VLAN to mitigate lateral movement risks.
+## Security & Access Controls
+*   **Network Isolation:** The Renegade endpoint is strictly isolated within a dedicated IoT/Kiosk VLAN, preventing lateral movement to critical home lab infrastructure.
+*   **Identity Management:** Authentication to Home Assistant utilizes a dedicated, view-only "Kiosk User," strictly enforcing the Principle of Least Privilege.
+*   **Traffic Routing:** All endpoint web and API traffic is routed through an Nginx reverse proxy to manage access and internal visibility safely.
 
 ## Key Takeaways
-*   **Data Aggregation:** Demonstrated expertise in integrating cross-platform data sources into a unified UI.
-*   **Systems Engineering:** Experience with end-to-end deployment—from backend ingestion and API management to frontend visualization.
-*   **Security Posture:** Applied "Least Privilege" by isolating the dashboard and associated IoT devices on a dedicated network segment.
+*   **Defense-in-Depth:** Successfully applied enterprise-grade isolation strategies to an IoT environment, ensuring that a compromised edge display cannot pivot into the core surveillance or server infrastructure.
+*   **API Obfuscation:** Demonstrated the ability to securely bridge systems (Blue Iris to Home Assistant) without exposing underlying credentials or internal network topologies to the client device.
