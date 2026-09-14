@@ -15,7 +15,6 @@ Standard consumer-grade antennas lacked the gain and directional consistency req
 *   **Signal Processing:** Implemented software-based decoding pipelines to transform raw RF telemetry into usable weather imagery.
 
 ## Key Takeaways
-*   **Hardware Fabrication:** Demonstrated mechanical engineering skills, including 3D printing custom components for antenna mounting and weatherproofing.
+*   **Hardware Fabrication:** Demonstrated mechanical engineering skills, including 3D printing custom components utilizing weather-resistant materials for antenna mounting and environmental shielding.
 *   **RF/SIGINT Proficiency:** Applied principles of signal theory, gain optimization, and spectrum analysis—core competencies for RF and cybersecurity analysis.
 *   **Full-Stack Engineering:** Successfully bridged the gap between raw physics (RF propagation) and digital data visualization.
-* 
