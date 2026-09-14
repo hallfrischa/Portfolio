@@ -12,9 +12,10 @@ The organization lacked adequate archival retention, resulting in the loss of cr
 ## Methodology (Risk-Based Analysis)
 *   **Incident Impact Assessment:** Evaluated the operational impact of existing data retention gaps following an identified security incident.
 *   **Capacity Planning:** Developed a technical storage calculation model accounting for:
-    *   **Camera Density:** Total count and resolution metrics.
-    *   **Compression Metrics:** Optimized bitrate and codec efficiency (e.g., H.264/H.265).
+    *   **Camera Density:** Total count and resolution metrics, specifically modeling high-bandwidth hardware including Amcrest and Vikylin 180-degree turret cameras.
+    *   **Compression Metrics:** Optimized bitrate and codec efficiency (e.g., H.264/H.265) within the Blue Iris Video Security Management software.
     *   **Retention Targets:** Calculated total required TB (terabytes) to achieve mandated X-day retention windows.
+*   **Secure Remote Access:** Integrated Tailscale to ensure isolated, Zero-Trust network access to surveillance streams without exposing internal ports to the public internet.
 *   **Policy Development:** Drafted a formal technical standard for surveillance retention, establishing protocols for periodic audit and hardware lifecycle management.
 
 ## Technical Skills Demonstrated
@@ -25,4 +26,3 @@ The organization lacked adequate archival retention, resulting in the loss of cr
 ## Key Takeaways
 *   **GRC Fundamentals:** Demonstrated the ability to map physical security needs to organizational policy.
 *   **Strategic Planning:** Successfully balanced the technical requirements of high-resolution surveillance with the budgetary constraints of storage procurement.
-* 
