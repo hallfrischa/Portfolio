@@ -22,7 +22,7 @@ This repository demonstrates a complete 0-to-1 security analytics lifecycle. It 
 *   **`dashboard.py`**: A Streamlit web application visualizing the ground-truth inventory of risk.
 *   **Cost of Fraud Metric:** Quantifies active threats into estimated business loss to drive cross-functional alignment and prioritize mitigation strategies (e.g., rate-limiting legacy protocols).
 
-## 🚀 Quick Start
+## Quick Start
 To run the executive dashboard locally:
 ```bash
 git clone 
