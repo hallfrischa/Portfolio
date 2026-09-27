@@ -5,8 +5,9 @@ I am a cybersecurity professional and systems engineer with over 15 years of han
 I approach technical debt and security vulnerabilities using the "Leave It Better" principle—architecting environments that are secure-by-design, highly resilient, and meticulously documented.
 
 ## Certifications
-- **CompTIA:** PenTest+, CySA+, Security+, A+
+- **CompTIA:** PenTest+, CySA+, Security+, A+, CompTIA Security Analytics Professional (CSAP)
 - **ISC2:** Certified in Cybersecurity (CC)
+-  **Google:** Cybersecurity/IT Support
 
 ## Core Competencies
 - **Governance & Compliance (GRC):** NIST SP 800-171, NIST SP 800-53, Risk Assessments, Policy Drafting, AI Governance.
@@ -24,7 +25,7 @@ This repository contains technical documentation, policy writing samples, Python
 - **[Technical Methodology: The Engineering Approach](./Technical_Methodology.md)**
   - An overview of the four-phase iterative loop I use for discovery, architecture, hardening, and documentation.
 - **[Professional Leadership Philosophy](./Professional_Leadership_Philosophy.md)**
-  - A summary of my core principles regarding team leadership, technical mentorship, and aligning IT operations with business objectives.
+  - A summary of my core principles regarding team leadership, technical mentorship, and aligning IT operations with business objectives, heavily informed by my Eagle Scout background and ongoing Scouting America leadership.
 
 ### Governance, Risk, & Compliance (GRC)
 - **[Security Framework Hardening Implementation](./Security_Framework_Hardening.md)**
@@ -34,6 +35,10 @@ This repository contains technical documentation, policy writing samples, Python
 - **[Surveillance Retention Policy & Storage Optimization](./Surveillance_Retention_Policy_Optimization.md)**
   - A GRC capacity planning project resolving a physical security coverage gap by forecasting storage requirements to meet NIST SP 800-171 controls.
 
+### Security Operations & Threat Analytics
+- **[Netflix Consumer Security Analytics Pipeline](./Netflix-Sec-Analytics)**
+  - A 0-to-1 threat hunting and data engineering project. Features a custom ETL pipeline, synthetic log generation, and a Jupyter Notebook analyzing raw authentication telemetry to detect credential stuffing botnets and device trust anomalies.
+    
 ### AI, Workflow Automation & ITSM
 - **[ITSM Workflow Automation & Orchestration (Zammad)](./Zammad_Ticketing_Workflow.md)**
   - An automated, self-hosted Zammad helpdesk deployment used for specialized administrative routing and knowledge base management.
@@ -66,6 +71,3 @@ This repository contains technical documentation, policy writing samples, Python
   - Hardware fabrication and configuration details for an agricultural spray drone utilizing ArduPilot and SIYI controllers.
 - **[Family Information Display](./Family_Information_Display.md)**
   - A smart home/homelab dashboard project focused on securely surfacing family calendar and security camera data on a kiosk display.
-
----
-*This repository is managed locally via Obsidian Markdown and synchronized using Git.*
