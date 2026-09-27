@@ -7,7 +7,7 @@ I approach technical debt and security vulnerabilities using the "Leave It Bette
 ## Certifications
 - **CompTIA:** PenTest+, CySA+, Security+, A+, CompTIA Security Analytics Professional (CSAP)
 - **ISC2:** Certified in Cybersecurity (CC)
--  **Google:** Cybersecurity/IT Support
+-  **Google:** Cybersecurity, IT Support Specialization
 
 ## Core Competencies
 - **Governance & Compliance (GRC):** NIST SP 800-171, NIST SP 800-53, Risk Assessments, Policy Drafting, AI Governance.
