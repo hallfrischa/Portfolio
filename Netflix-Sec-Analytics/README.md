@@ -25,7 +25,7 @@ This repository demonstrates a complete 0-to-1 security analytics lifecycle. It 
 ## Quick Start
 To run the executive dashboard locally:
 ```bash
-git clone 
+git clone [https://github.com/hallfrischa/Portfolio.git](https://github.com/hallfrischa/Portfolio.git)
 cd netflix-consumer-security-analytics
 pip install -r requirements.txt
 python 1_data_pipeline/generate_logs.py
