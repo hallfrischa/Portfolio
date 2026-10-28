@@ -7,7 +7,7 @@
 *   **Next Review Date:** September 14, 2027
 *   **Approver:** Office of the Chief Information Security Officer (CISO)
 *   **Target Organization:** MedVanguard Solutions (Hypothetical Case Study)
-*   **Author:** Aaron Hallfrisch | M.S. Candidate in Cybersecurity and Information Assurance
+*   **Author:** Aaron Hallfrisch | M.S., CSIA
 *   **Framework Baselines:** NIST AI RMF 1.0, OWASP Top 10 for LLM Applications v1.0, HIPAA Security Rule
 
 ---
