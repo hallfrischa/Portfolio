@@ -40,7 +40,7 @@ class AISecurityProxy:
         self.dlp_patterns = {
             "PII_SSN": r"\b\d{3}[-.]?\d{2}[-.]?\d{4}\b",
             "PII_CREDIT_CARD": r"\b(?:\d[ -]*?){13,16}\b",
-            "CRED_API_KEY": r"(?i)(?:api_key|secret|token|password)[\s:=]+[\'\"]?[a-zA-Z0-9_\-]{16,64}[\'\"]?",
+            "CRED_API_KEY": r"(?i)\b[a-zA-Z0-9_]*(?:api_key|secret|token|password)[\s:=]+[\'\"]?[a-zA-Z0-9_\-]{16,64}[\'\"]?",
             "CRED_AWS_KEY": r"(?i)AKIA[0-9A-Z]{16}",
             "IP_INTERNAL_DOMAIN": r"\b[a-zA-Z0-9.-]+\.internal\.corp\b"
         }
