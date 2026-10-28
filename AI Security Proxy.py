@@ -6,6 +6,21 @@ A lightweight Data Loss Prevention (DLP) middleware script designed to intercept
 outbound prompts to public Large Language Models (LLMs). It utilizes regular 
 expressions to detect and redact Personally Identifiable Information (PII) 
 and hardcoded secrets before transmission.
+
+Architectural Limitations & Production Roadmap:
+While deterministic regex pattern matching provides low-latency filtering for 
+structured secrets and standard PII formats, a production enterprise deployment 
+requires defense-in-depth against obfuscation and false positives:
+1. Checksum Validation: Integrate Luhn algorithm verification alongside the 
+   PII_CREDIT_CARD regex to eliminate false positives on arbitrary 13-to-16 digit 
+   numeric strings (e.g., tracking numbers or internal database IDs).
+2. Pre-Scan Normalization & Decoding: Implement pre-processing hooks to detect 
+   and decode Base64, URL, or hex-encoded payloads prior to regex evaluation to 
+   prevent trivial encoding bypasses.
+3. Contextual NER Integration: Pair deterministic regex rules with a lightweight, 
+   locally hosted Named Entity Recognition (NER) model (e.g., Microsoft Presidio 
+   or spaCy) to identify unstructured PII such as names, physical addresses, and 
+   clinical context that cannot be captured via static regular expressions.
 """
 
 import re
